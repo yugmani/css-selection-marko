@@ -1,3 +1,34 @@
-body {
-  background: orange;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  background-color: whitesmoke;
+  padding-left: 10px;
+}
+
+p {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+.default-selection {
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+}
+
+.custom-selection::selection {
+  background-color: #8e44ad;
+  color: yellow;
 }
